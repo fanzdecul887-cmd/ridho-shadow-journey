@@ -31,6 +31,13 @@ func attack():
 		return
 
 	can_attack = false
+
+	print("Dilz menebas dengan Astra Excalibur!")
+
+	await get_tree().create_timer(0.4).timeout
+	can_attack = true
+
+	can_attack = false
 	print("Dilz menyerang dengan Astra Excalibur!")
 
 	await get_tree().create_timer(0.4).timeout
