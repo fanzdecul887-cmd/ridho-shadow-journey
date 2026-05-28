@@ -1,0 +1,18 @@
+extends Control
+
+signal left_pressed
+signal right_pressed
+signal jump_pressed
+signal attack_pressed
+
+func _on_left_down():
+	emit_signal("left_pressed")
+
+func _on_right_down():
+	emit_signal("right_pressed")
+
+func _on_jump_down():
+	emit_signal("jump_pressed")
+
+func _on_attack_down():
+	emit_signal("attack_pressed")
