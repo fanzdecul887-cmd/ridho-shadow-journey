@@ -1,0 +1,15 @@
+[gd_scene format=3]
+
+[node name="UI" type="CanvasLayer"]
+
+[node name="Left" type="Button" parent="."]
+text = "◀"
+
+[node name="Right" type="Button" parent="."]
+text = "▶"
+
+[node name="Jump" type="Button" parent="."]
+text = "⬆"
+
+[node name="Attack" type="Button" parent="."]
+text = "⚔"
