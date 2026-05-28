@@ -1,0 +1,15 @@
+[gd_scene format=3]
+
+[node name="Main" type="Node2D"]
+
+[node name="Player" type="CharacterBody2D" parent="."]
+script = ExtResource("res://scripts/player.gd")
+
+[node name="Boss" type="CharacterBody2D" parent="."]
+script = ExtResource("res://scripts/boss.gd")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+
+[node name="UI" type="CanvasLayer" parent="."]
+script = ExtResource("res://scenes/ui_mobile.tscn")
