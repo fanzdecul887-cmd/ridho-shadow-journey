@@ -1,0 +1,24 @@
+extends CanvasLayer
+
+@onready var left = $Left
+@onready var right = $Right
+@onready var jump = $Jump
+@onready var attack = $Attack
+
+func _ready():
+	left.pressed.connect(_left)
+	right.pressed.connect(_right)
+	jump.pressed.connect(_jump)
+	attack.pressed.connect(_attack)
+
+func _left():
+	Input.action_press("ui_left")
+
+func _right():
+	Input.action_press("ui_right")
+
+func _jump():
+	Input.action_press("ui_up")
+
+func _attack():
+	Input.action_press("attack")
